@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS DZ_14</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<header>
+    <h1>Домашняя работа №14</h1>
+</header>
+
+<div class="content">
+    <script src="JS/DZ14.js"></script>
+
+    <div id="taskList">
+        <input type="button" value="1. Меньшее из двух чисел" onclick=setParameters(1) name="btn1">
+        <input type="button" value="2. Возведение в степень" onclick=setParameters(2) name="btn2">
+        <input type="button" value="3. Решение примера" onclick=setParameters(3) name="btn3">
+        <input type="button" value="4. Проверка числа на простоту" onclick=setParameters(4) name="btn4">
+        <input type="button" value="5. Таблица умножения" onclick=setParameters(5) name="btn5">
+        <input type="button" value="6. Остаток от деления" onclick=setParameters(6) name="btn6">
+        <input type="button" value="7. Сумма чисел" onclick=setParameters(7) name="btn7">
+        <input type="button" value="8. Большее число" onclick=setParameters(8) name="btn8">
+        <input type="button" value="9. Числа из диапазона" onclick=setParameters(9) name="btn9">
+        <input type="button" value="10. Дата следующего дня" onclick=setParameters(10) name="btn10">
+    </div>
+
+    <div id="task">
+        <h2 id="condition">Задача</h2>
+        <h3>Запрос 1</h3>
+        <input type="text">
+        <h3>Запрос 2</h3>
+        <input type="text">
+        <h3>Запрос 3</h3>
+        <input type="text">
+        <h3>Запрос 4</h3>
+        <input type="text">
+        <h3>Запрос 5</h3>
+        <input type="text">
+
+        <p><input type="radio" name="f9" id="r1" checked>
+            <label for="r1">Чётные</label></p>
+        <p><input type="radio" name="f9" id="r2">
+            <label for="r2">Нечётные</label></p>
+
+        <input type="button" value="Выполнить" onclick=doChosen() name="btn11">
+        <input type="button" value="Назад" onclick=showTaskList() name="btn12">
+    </div>
+    <div class="result">
+        <h2 id="result"></h2>
+    </div>
+
+
+</div>
+
+
+</body>
+</html>
